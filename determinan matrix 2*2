@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+int main ()
+{
+  int rows, columns, determinant, deterMatrix[2] [2];
+  cout << "\nEnter the 3*3 Matrix Items\n";
+  for (rows = 0; rows < 2; rows++)
+    {
+      for (columns = 0; columns < 2; columns++)
+	{
+	  cin >> deterMatrix[rows][columns];
+	}
+    }
+    
+    determinant = ((deterMatrix[0][0] * deterMatrix[1][1]) -
+                  (deterMatrix[0][1] *  deterMatrix[1][0]));
+                  
+    cout<< "\nThe determinant is : = " << determinant;
+    cout<<"\n";
+    
+    return 0;
+}
